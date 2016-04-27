@@ -18,7 +18,6 @@
     src: url("fonts/Montserrat-Regular.otf");
 }
 
-
 header, .jumbotron, section, footer {
 	width: 100%;
 	max-width: 1150px;
@@ -43,6 +42,7 @@ h2 {
 }
 
 /* ---------------- HEADER -------------------- */
+
 
 
 header {
@@ -77,6 +77,7 @@ header h1{
 	box-shadow: 1px 8px 18px -6px rgba(0,0,0,0.75);
 	transition: opacity 1s, box-shadow 1s;
 	pointer-events: none;
+	z-index:2;
 }
 
 .mainNav .navigationTitle {
@@ -199,9 +200,24 @@ header.navOpened ul {
 /* --------------------CONTACT -------------------*/
 
 .contactWrapper {
-	background-color: #000;
+	background-color: rgba(0,0,0,0.9);
 	padding-top: 80px;
 	min-width: 100%;
+	display: block;
+	position: relative;
+}
+
+.contactWrapper::after {
+	content: "";
+	  background: url("http://i.imgur.com/y8BJWaH.jpg") no-repeat;
+	  background-size: cover;
+	  opacity: 1;
+	  top: 0;
+	  left: 0;
+	  bottom: 0;
+	  right: 0;
+	  position: absolute;
+	  z-index: -1; 
 }
 
 .contactWrapper h2 {
@@ -258,8 +274,7 @@ header.navOpened ul {
 }
 
 .contactWrapper form input, .contactWrapper form textarea {
-	background-color: #000;
-	height: 30px;
+	background-color: rgba(0,0,0,0);
 	width: 100%;
 	color: #fff;
 	border: 0;
@@ -601,9 +616,24 @@ footer {
 
 .jumbotron {
 	height: 520px;
-	background-color: #ffe1bd;
+	background-color: rgba(255, 225, 189, 0.9);
 	text-align: center;
+	position: relative;
+	display: block;
 }
+
+.jumbotron::after {
+	content: "";
+	  background: url("http://i.imgur.com/oo3wJhA.jpg");
+	  opacity: 1;
+	  top: 0;
+	  left: 0;
+	  bottom: 0;
+	  right: 0;
+	  position: absolute;
+	  z-index: -1; 
+}
+
 
 .jumbotron h2 {
 	font-family: MontserratBold;
