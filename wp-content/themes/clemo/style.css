@@ -292,6 +292,7 @@ header.navOpened ul {
 	margin: 2px auto 30px;
 	padding: 0 0 5px;
 	box-shadow: none;
+	text-align: center;
 }
 
 .contactWrapper form label {
@@ -299,6 +300,28 @@ header.navOpened ul {
 	font-family: MontserratLight;
 	font-size: 14px;
 	display: none;
+}
+
+.thankyouMessage p {
+	font-family: MontserratLight;
+	font-size: 30px;
+	color: #fff;
+	padding-top: 20px;
+}
+
+.thankyouMessage .newMessage {
+	margin-top: 50px;
+}
+
+.thankyouMessage svg {
+	margin-left: 40px;
+}
+
+.thankyouMessage {
+	display: none;
+	text-align: center;
+	margin-top: 50px;
+	padding-bottom: 50px;
 }
 
 @media screen and (min-width: 750px) {
@@ -351,6 +374,11 @@ header.navOpened ul {
 	.contactWrapper form .submitBtn{
 		margin: 2px 0 0;
 		padding: 0 0 5px;
+	}
+	.thankyouMessage {
+		text-align: left;
+		margin-top: 0;
+		padding-bottom: 50px;
 	}
 }
 

@@ -31,6 +31,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
 				this.style.color = '#fff';
 			}
 		});
+		submitBtn.addEventListener("click",function(){
+			var thankyouMessage = document.querySelector('.thankyouMessage');
+			thankyouMessage.style.display = "block";
+			this.parentNode.style.display = "none";
+		});
 	}
 	var hamburger = document.querySelector(".hamburger");
 	hamburger.addEventListener("click",function(){
